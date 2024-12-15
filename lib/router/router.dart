@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio_flutter/features/home/presentation/desktop_home.dart';
+import 'package:my_portfolio_flutter/features/hero/presentation/desktop_home.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:go_router/go_router.dart';
 
@@ -11,7 +11,7 @@ List<GoRoute> get routes => [
         name: 'home',
         pageBuilder: (context, state) {
           return CustomTransitionPage(
-            child: const DHomePage(),
+            child: const DHeroPage(),
             transitionsBuilder:
                 (context, animation, secondaryAnimation, child) {
               return FadeTransition(
@@ -26,10 +26,6 @@ List<GoRoute> get routes => [
 
 @riverpod
 GoRouter goRoute(GoRouteRef ref) {
-  FutureOr<String?> redirect(BuildContext context, GoRouterState state) async {
-    return null;
-  }
-
   return GoRouter(
     routes: routes,
     initialLocation: '/',
