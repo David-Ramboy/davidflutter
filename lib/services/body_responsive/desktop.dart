@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio_flutter/features/about/presentation/desktop_about.dart';
+import 'package:my_portfolio_flutter/features/experiences/presentation/desktop_experiences.dart';
 import 'package:my_portfolio_flutter/features/hero/presentation/desktop_home.dart';
-import 'package:my_portfolio_flutter/features/navigation/nav_desktop.dart';
+import 'package:my_portfolio_flutter/services/navigation/nav_desktop.dart';
 import '../../config/constants.dart' as constants;
 
 class DesktopBody extends StatelessWidget {
@@ -17,13 +18,17 @@ class DesktopBody extends StatelessWidget {
             ConstrainedBox(
               constraints: const BoxConstraints(
                   minWidth: 0, maxWidth: constants.desktop),
-              child: const Column(
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  DesktopNav(),
-                  DHeroPage(),
-                  DAboutPage(),
+                  const DesktopNav(),
+                  const DHeroPage(),
+                  Container(
+                    height: 100,
+                  ),
+                  const DAboutPage(),
+                  DesktopExperiences(),
                 ],
               ),
             ),
