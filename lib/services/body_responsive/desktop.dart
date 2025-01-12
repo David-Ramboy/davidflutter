@@ -28,6 +28,9 @@ class DesktopBody extends StatelessWidget {
                     height: 100,
                   ),
                   const DAboutPage(),
+                  Container(
+                    height: 100,
+                  ),
                   DesktopExperiences(),
                 ],
               ),
