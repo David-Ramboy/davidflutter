@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio_flutter/features/hero/presentation/desktop_home.dart';
+import 'package:my_portfolio_flutter/features/screens/desktop.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:go_router/go_router.dart';
 
@@ -11,7 +12,7 @@ List<GoRoute> get routes => [
         name: 'home',
         pageBuilder: (context, state) {
           return CustomTransitionPage(
-            child: const DHeroPage(),
+            child: const DesktopBody(),
             transitionsBuilder:
                 (context, animation, secondaryAnimation, child) {
               return FadeTransition(

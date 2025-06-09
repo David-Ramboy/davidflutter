@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../config/constants.dart' as constants;
-import 'package:my_portfolio_flutter/core/utility/utility_strings.dart';
+import '../../../core/config/constants.dart' as colors;
+import 'package:my_portfolio_flutter/core/utilities/utility_strings.dart';
 
 class IntroductionWidget extends StatelessWidget {
   const IntroductionWidget({super.key});
@@ -29,7 +29,7 @@ class IntroductionWidget extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 40,
                 fontWeight: FontWeight.w900,
-                color: constants.blue,
+                color: colors.blue,
               ),
             ),
           ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../config/constants.dart' as constants;
+import '../../../core/config/constants.dart' as constants;
 
 class BulletText extends StatelessWidget {
   const BulletText({super.key, required this.text});

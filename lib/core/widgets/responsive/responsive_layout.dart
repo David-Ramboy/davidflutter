@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio_flutter/config/constants.dart' as responsive;
+import 'package:my_portfolio_flutter/core/config/constants.dart' as responsive;
 
 //  ======================= Pages Layout Responsive =================
 class ResponsiveLayout extends StatelessWidget {

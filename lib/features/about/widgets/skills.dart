@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio_flutter/core/utility/utility_strings.dart';
+import 'package:my_portfolio_flutter/core/utilities/utility_strings.dart';
 import 'package:my_portfolio_flutter/features/about/components/bullet_text.dart';
 
 class SkillsAbout extends StatelessWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio_flutter/core/utility/utility_strings.dart';
+import 'package:my_portfolio_flutter/core/utilities/utility_strings.dart';
 
 class DescriptionAbout extends StatelessWidget {
   const DescriptionAbout({super.key});

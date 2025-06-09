@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:my_portfolio_flutter/core/utility/utility_strings.dart';
-import '../../../config/constants.dart' as constants;
+import 'package:my_portfolio_flutter/core/utilities/utility_strings.dart';
+import '../../../core/config/constants.dart' as constants;
 
 class ExpUtolDescriptionWidget extends StatelessWidget {
   const ExpUtolDescriptionWidget({super.key});
@@ -27,10 +26,13 @@ class ExpUtolDescriptionWidget extends StatelessWidget {
             ],
           ),
         ),
+        const Row(
+          children: [Icon(Icons.business_center), Text('Aug 2023 - Present')],
+        ),
         RichText(
           textScaler:
               TextScaler.linear(UtilString.paragphTextScaleFactor(context)),
-          text: TextSpan(
+          text: const TextSpan(
             children: [
               TextSpan(
                   text:
@@ -38,15 +40,15 @@ class ExpUtolDescriptionWidget extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
-          height: 10,
+        const SizedBox(
+          height: 20,
         ),
         Column(
           children: [
             RichText(
               textScaler:
                   TextScaler.linear(UtilString.paragphTextScaleFactor(context)),
-              text: TextSpan(
+              text: const TextSpan(
                 children: [
                   TextSpan(
                       style: TextStyle(

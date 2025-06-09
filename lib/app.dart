@@ -1,26 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio_flutter/services/body_responsive/desktop.dart';
-import 'package:my_portfolio_flutter/services/responsive_layout.dart';
-import 'config/constants.dart' as constant_color;
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+import 'package:my_portfolio_flutter/core/widgets/responsive/responsive_layout.dart';
+import 'package:my_portfolio_flutter/features/screens/desktop.dart';
+import 'package:my_portfolio_flutter/router/router.dart';
+import 'core/config/color_constants.dart' as constant_color;
 
-class App extends StatelessWidget {
+class App extends ConsumerWidget {
   const App({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+  Widget build(BuildContext context, WidgetRef ref) {
+    final GoRouter router = ref.watch(goRouteProvider);
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorSchemeSeed: constant_color.backgroundScreen,
+        scaffoldBackgroundColor: constant_color.backgroundScreenV3,
         fontFamily: 'Inter',
       ),
-      home: const Scaffold(
-        body: ResponsiveLayout(
-          mobileBody: Placeholder(),
-          tabletBody: Placeholder(),
-          desktopBody: DesktopBody(),
-        ),
-      ),
+      routerConfig: router,
     );
   }
 }

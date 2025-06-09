@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio_flutter/core/utility/utility_strings.dart';
+import 'package:my_portfolio_flutter/core/utilities/utility_strings.dart';
 import 'package:my_portfolio_flutter/features/experiences/widgets/exp_description.dart';
 import 'package:my_portfolio_flutter/features/experiences/widgets/exp_navigation.dart';
 
@@ -44,14 +44,18 @@ class DesktopExperiences extends StatelessWidget {
                 color: Colors.black,
                 margin: const EdgeInsets.symmetric(horizontal: 4.0),
               )),
-              SizedBox(
+              const SizedBox(
                 width: 50,
               )
             ],
           ),
           Container(
-            padding: EdgeInsets.only(top: 50),
-            child: Row(
+            decoration: BoxDecoration(
+              border: Border.all(),
+            ),
+            padding: const EdgeInsets.only(top: 50),
+            child: const Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(child: ExpUtolDescriptionWidget()),
                 Expanded(child: ExpNavigationWidget()),

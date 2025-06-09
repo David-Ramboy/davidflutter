@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio_flutter/core/utility/utility_strings.dart';
+import 'package:my_portfolio_flutter/core/utilities/utility_strings.dart';
 import '../../config/constants.dart' as constant_color;
 
-class DesktopNav extends StatelessWidget {
-  const DesktopNav({super.key});
+class DesktopNavV3 extends StatelessWidget {
+  const DesktopNavV3({super.key});
 
   @override
   Widget build(BuildContext context) {
