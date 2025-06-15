@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio_flutter/core/widgets/navbar/nav_desktop.dart';
 import 'package:my_portfolio_flutter/features/about/presentation/desktop_about.dart';
+import 'package:my_portfolio_flutter/features/experiences/presentation/V3/desktop_experiences.dart';
 import 'package:my_portfolio_flutter/features/experiences/presentation/desktop_experiences.dart';
 import 'package:my_portfolio_flutter/features/hero/presentation/V3/desktop_home.dart';
-import 'package:my_portfolio_flutter/features/hero/presentation/desktop_home.dart';
+import 'package:my_portfolio_flutter/features/skills/presentation/skills.dart';
 import '../../core/config/constants.dart' as constants;
 
 class TabletHomeBody extends StatelessWidget {
@@ -19,11 +20,16 @@ class TabletHomeBody extends StatelessWidget {
             ConstrainedBox(
               constraints: const BoxConstraints(
                   minWidth: 0, maxWidth: constants.desktop),
-              child: const Column(
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // const DesktopNav(),
+                  Container(
+                    // decoration: BoxDecoration(
+                    //   border: Border.all(color: Colors.white),
+                    // ),
+                    child: const DesktopNav(),
+                  ),
                   // Container(
                   //   height: 100,
                   // ),
@@ -33,7 +39,20 @@ class TabletHomeBody extends StatelessWidget {
                   // ),
                   // const DesktopExperiences(),
 
-                  DHeroPageV3(),
+                  const DHeroPageV3(),
+                  const SizedBox(
+                    height: 250,
+                  ),
+
+                  const DExperiencePageV3(),
+                  const SizedBox(
+                    height: 250,
+                  ),
+
+                  const SkillPage(),
+                  const SizedBox(
+                    height: 250,
+                  ),
                 ],
               ),
             ),

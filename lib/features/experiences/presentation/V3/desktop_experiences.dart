@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:my_portfolio_flutter/core/common/styles/utol_text_styles.dart';
 import 'package:my_portfolio_flutter/core/widgets/box_constraints/box_constraints.dart';
+import 'package:my_portfolio_flutter/features/experiences/widgets/freelance_experiences.dart';
+import 'package:my_portfolio_flutter/features/experiences/widgets/utol_experiences.dart';
 import 'package:my_portfolio_flutter/features/hero/widgets/intro_image.dart';
 import 'package:my_portfolio_flutter/features/hero/widgets/introduction.dart';
 
@@ -21,38 +24,47 @@ class DExperiencePageV3 extends ConsumerWidget {
             const SizedBox(
               height: 20,
             ),
-            Text(
-              "Experience",
-              style: UtolTextStyles.title2,
-            ),
-            const SizedBox(
-              height: 100,
-            ),
             Padding(
-              padding: const EdgeInsets.only(left: 2),
+              padding: const EdgeInsets.only(left: 7),
               child: Text(
-                "Front End - Software Developer - Flutter - 1yr & 8 months",
-                style: UtolTextStyles.title2Sp.copyWith(
-                  fontSize: 25,
-                  fontFamily: 'Inter',
-                  height: 3,
-                  fontWeight: FontWeight.w100,
-                ),
+                "Experience",
+                style: UtolTextStyles.title2.copyWith(fontSize: 28),
               ),
             ),
-            BoxConstraintsWidth(
-              desktopMaxWidth: -290,
-              widgetContent: Padding(
-                padding: const EdgeInsets.only(left: 2, top: 20),
-                child: Text(
-                  " -   A passionate programmer with experience in front-end, along with MIS and mobile app development using Flutter",
-                  style: UtolTextStyles.title2Sp.copyWith(
-                    fontSize: 20,
-                    fontFamily: 'Inter',
-                    fontWeight: FontWeight.w100,
-                  ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const SizedBox(
+                  height: 100,
                 ),
-              ),
+                UtolExperiences(),
+                const SizedBox(
+                  height: 100,
+                ),
+                Container(
+                    padding: EdgeInsets.only(right: 30),
+                    child: Text(
+                      '|',
+                      style: UtolTextStyles.body,
+                    )),
+                const SizedBox(
+                  height: 100,
+                ),
+                const UtolExperiences(),
+                const SizedBox(
+                  height: 100,
+                ),
+                Container(
+                    padding: EdgeInsets.only(right: 30),
+                    child: Text(
+                      '|',
+                      style: UtolTextStyles.body,
+                    )),
+                const SizedBox(
+                  height: 100,
+                ),
+                const InternExperiences(),
+              ],
             ),
           ],
         ),

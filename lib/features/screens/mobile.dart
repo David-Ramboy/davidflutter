@@ -3,7 +3,6 @@ import 'package:my_portfolio_flutter/core/widgets/navbar/nav_desktop.dart';
 import 'package:my_portfolio_flutter/features/about/presentation/desktop_about.dart';
 import 'package:my_portfolio_flutter/features/experiences/presentation/desktop_experiences.dart';
 import 'package:my_portfolio_flutter/features/hero/presentation/V3/desktop_home.dart';
-import 'package:my_portfolio_flutter/features/hero/presentation/desktop_home.dart';
 import '../../core/config/constants.dart' as constants;
 
 class MobileHomeBody extends StatelessWidget {
