@@ -16,7 +16,7 @@ class InternExperiences extends StatelessWidget {
           padding: const EdgeInsets.only(left: 7),
           child: Text(
             "Inter Full-Stack Software Developer - Django - 4 months",
-            style: UtolTextStyles.title2Sp.copyWith(
+            style: CustomTextStyles.title2Sp.copyWith(
               fontSize: 22,
               fontFamily: 'Inter',
               height: 3,
@@ -33,12 +33,12 @@ class InternExperiences extends StatelessWidget {
                 data:
                     " - Developed Full-stack Course management System using django\n - Cooperate with teams developing MIS for the company using django.\n",
                 styleSheet: MarkdownStyleSheet(
-                  p: UtolTextStyles.bodyMedium.copyWith(
+                  p: CustomTextStyles.bodyMedium.copyWith(
                     fontSize: 20,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w100,
                   ),
-                  listBullet: UtolTextStyles.bodyMedium.copyWith(
+                  listBullet: CustomTextStyles.bodyMedium.copyWith(
                     fontSize: 20,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w100,

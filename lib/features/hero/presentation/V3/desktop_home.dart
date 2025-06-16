@@ -23,17 +23,17 @@ class DHeroPageV3 extends ConsumerWidget {
             ),
             Text(
               "Hi, I'm",
-              style: UtolTextStyles.title1.copyWith(fontSize: 62),
+              style: CustomTextStyles.title1.copyWith(fontSize: 62),
             ),
             Text(
               "David Bryan Ramboy",
-              style: UtolTextStyles.title1.copyWith(fontSize: 62, height: 1),
+              style: CustomTextStyles.title1.copyWith(fontSize: 62, height: 1),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 2),
               child: Text(
                 "MIS Developer | Front-End Specialist | Flutter Enthusiast",
-                style: UtolTextStyles.title2Sp.copyWith(
+                style: CustomTextStyles.title2Sp.copyWith(
                   fontSize: 22,
                   fontFamily: 'Inter',
                   height: 3,
@@ -47,7 +47,7 @@ class DHeroPageV3 extends ConsumerWidget {
                 padding: const EdgeInsets.only(left: 2, top: 20),
                 child: Text(
                   "A passionate programmer with experience in front-end, along with MIS and mobile app development using Flutter",
-                  style: UtolTextStyles.title2Sp.copyWith(
+                  style: CustomTextStyles.title2Sp.copyWith(
                     fontSize: 20,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w100,

@@ -16,7 +16,7 @@ class UtolExperiences extends StatelessWidget {
           padding: const EdgeInsets.only(left: 7),
           child: Text(
             "Front End - Software Developer - Flutter - 1yr & 8 months",
-            style: UtolTextStyles.title2Sp.copyWith(
+            style: CustomTextStyles.title2Sp.copyWith(
               fontSize: 22,
               fontFamily: 'Inter',
               height: 3,
@@ -33,12 +33,12 @@ class UtolExperiences extends StatelessWidget {
                 data:
                     " - Responsible For Developing and Maintaining the Landing Website of the Company.\n - Streamline the Admin tool for the company and lead new features.\n - Streamline Two Mobile Application of the Company.",
                 styleSheet: MarkdownStyleSheet(
-                  p: UtolTextStyles.bodyMedium.copyWith(
+                  p: CustomTextStyles.bodyMedium.copyWith(
                     fontSize: 20,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w100,
                   ),
-                  listBullet: UtolTextStyles.bodyMedium.copyWith(
+                  listBullet: CustomTextStyles.bodyMedium.copyWith(
                     fontSize: 20,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w100,

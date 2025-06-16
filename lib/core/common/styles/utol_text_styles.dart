@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../core/config/color_constants.dart' as colors;
 
-abstract class UtolTextStyles {
+abstract class CustomTextStyles {
   // Base styles
   static const String fontFamily = 'Playfair-Display';
   static const TextStyle baseStyle = TextStyle(

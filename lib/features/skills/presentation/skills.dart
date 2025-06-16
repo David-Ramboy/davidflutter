@@ -19,7 +19,7 @@ class SkillPage extends StatelessWidget {
               padding: const EdgeInsets.only(left: 7),
               child: Text(
                 "Skills",
-                style: UtolTextStyles.title2.copyWith(fontSize: 28),
+                style: CustomTextStyles.title2.copyWith(fontSize: 28),
               ),
             ),
             const SizedBox(

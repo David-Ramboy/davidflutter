@@ -28,7 +28,7 @@ class DExperiencePageV3 extends ConsumerWidget {
               padding: const EdgeInsets.only(left: 7),
               child: Text(
                 "Experience",
-                style: UtolTextStyles.title2.copyWith(fontSize: 28),
+                style: CustomTextStyles.title2.copyWith(fontSize: 28),
               ),
             ),
             Column(
@@ -45,12 +45,12 @@ class DExperiencePageV3 extends ConsumerWidget {
                     padding: EdgeInsets.only(right: 30),
                     child: Text(
                       '|',
-                      style: UtolTextStyles.body,
+                      style: CustomTextStyles.body,
                     )),
                 const SizedBox(
                   height: 100,
                 ),
-                const UtolExperiences(),
+                const InternExperiences(),
                 const SizedBox(
                   height: 100,
                 ),
@@ -58,7 +58,7 @@ class DExperiencePageV3 extends ConsumerWidget {
                     padding: EdgeInsets.only(right: 30),
                     child: Text(
                       '|',
-                      style: UtolTextStyles.body,
+                      style: CustomTextStyles.body,
                     )),
                 const SizedBox(
                   height: 100,

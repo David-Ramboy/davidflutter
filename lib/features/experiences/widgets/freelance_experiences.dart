@@ -16,7 +16,7 @@ class InternExperiences extends StatelessWidget {
           padding: const EdgeInsets.only(left: 7),
           child: Text(
             "Freelance FullStack Software Developer - MERN - 4 months",
-            style: UtolTextStyles.title2Sp.copyWith(
+            style: CustomTextStyles.title2Sp.copyWith(
               fontSize: 22,
               fontFamily: 'Inter',
               height: 3,
@@ -32,12 +32,12 @@ class InternExperiences extends StatelessWidget {
               data:
                   " - Developed and Launch Hotel Management System using MERN Stack.",
               styleSheet: MarkdownStyleSheet(
-                p: UtolTextStyles.bodyMedium.copyWith(
+                p: CustomTextStyles.bodyMedium.copyWith(
                   fontSize: 20,
                   fontFamily: 'Inter',
                   fontWeight: FontWeight.w100,
                 ),
-                listBullet: UtolTextStyles.bodyMedium.copyWith(
+                listBullet: CustomTextStyles.bodyMedium.copyWith(
                   fontSize: 20,
                   fontFamily: 'Inter',
                   fontWeight: FontWeight.w100,
