@@ -3,9 +3,12 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:my_portfolio_flutter/core/common/styles/utol_text_styles.dart';
 import 'package:my_portfolio_flutter/core/widgets/box_constraints/box_constraints.dart';
 
-class InternExperiences extends StatelessWidget {
-  const InternExperiences({super.key});
-
+class ExperiencesWidget extends StatelessWidget {
+  const ExperiencesWidget(
+      {super.key, this.title, this.subTitle, this.description});
+  final String? title;
+  final String? subTitle;
+  final String? description;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -14,14 +17,27 @@ class InternExperiences extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(left: 7),
-          child: Text(
-            "Freelance FullStack Software Developer - MERN - 4 months",
-            style: CustomTextStyles.title2Sp.copyWith(
-              fontSize: 22,
-              fontFamily: 'Inter',
-              height: 3,
-              fontWeight: FontWeight.w100,
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                title ?? '',
+                style: CustomTextStyles.title2Sp.copyWith(
+                  fontSize: 22,
+                  fontFamily: 'Inter',
+                  height: 2,
+                  fontWeight: FontWeight.w100,
+                ),
+              ),
+              Text(
+                subTitle ?? '',
+                style: CustomTextStyles.title2Sp.copyWith(
+                  fontSize: 10,
+                  fontFamily: 'Inter',
+                  fontWeight: FontWeight.w100,
+                ),
+              ),
+            ],
           ),
         ),
         BoxConstraintsWidth(
@@ -29,8 +45,7 @@ class InternExperiences extends StatelessWidget {
           widgetContent: Padding(
             padding: const EdgeInsets.only(top: 20, right: 10),
             child: MarkdownBody(
-              data:
-                  " - Developed and Launch Hotel Management System using MERN Stack.",
+              data: description ?? '',
               styleSheet: MarkdownStyleSheet(
                 p: CustomTextStyles.bodyMedium.copyWith(
                   fontSize: 20,

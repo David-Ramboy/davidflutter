@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:my_portfolio_flutter/core/common/styles/utol_text_styles.dart';
-import 'package:my_portfolio_flutter/core/widgets/box_constraints/box_constraints.dart';
-import 'package:my_portfolio_flutter/features/experiences/widgets/freelance_experiences.dart';
-import 'package:my_portfolio_flutter/features/experiences/widgets/utol_experiences.dart';
-import 'package:my_portfolio_flutter/features/hero/widgets/intro_image.dart';
-import 'package:my_portfolio_flutter/features/hero/widgets/introduction.dart';
+import 'package:my_portfolio_flutter/features/experiences/widgets/experience_widget.dart';
+import '../../../../core/config/constants.dart' as responsive;
 
 class DExperiencePageV3 extends ConsumerWidget {
   const DExperiencePageV3({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final Size screenSize = MediaQuery.of(context).size;
     return Container(
-      padding: const EdgeInsets.only(top: 60, left: 75, right: 50),
       width: double.infinity,
       child: Center(
         child: Column(
@@ -32,17 +28,29 @@ class DExperiencePageV3 extends ConsumerWidget {
               ),
             ),
             Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: screenSize.width < responsive.mobileScreen ||
+                      screenSize.width < responsive.tabletScreen
+                  ? CrossAxisAlignment.start
+                  : CrossAxisAlignment.center,
               children: [
                 const SizedBox(
                   height: 100,
                 ),
-                UtolExperiences(),
+                const ExperiencesWidget(
+                  title:
+                      'Front End - Software Developer - Flutter - 1yr & 8 months',
+                  subTitle: 'UTOL - Unified Transport Operations League Corp.',
+                  description:
+                      "- Responsible For Developing and Maintaining the Landing Website of the Company.\n - Streamline the Admin tool for the company and lead new features.\n - Streamline Two Mobile Application of the Company.",
+                ),
                 const SizedBox(
                   height: 100,
                 ),
                 Container(
-                    padding: EdgeInsets.only(right: 30),
+                    alignment: screenSize.width < responsive.mobileScreen ||
+                            screenSize.width < responsive.tabletScreen
+                        ? Alignment.center
+                        : null,
                     child: Text(
                       '|',
                       style: CustomTextStyles.body,
@@ -50,12 +58,21 @@ class DExperiencePageV3 extends ConsumerWidget {
                 const SizedBox(
                   height: 100,
                 ),
-                const InternExperiences(),
+                const ExperiencesWidget(
+                  title:
+                      'Inter Full-Stack Software Developer - Django - 4 months',
+                  subTitle: 'SME Soft Inc. Makati City, Philippines',
+                  description:
+                      " - Developed Full-stack Course management System using django\n - Cooperate with teams developing MIS for the company using django.\n",
+                ),
                 const SizedBox(
                   height: 100,
                 ),
                 Container(
-                    padding: EdgeInsets.only(right: 30),
+                    alignment: screenSize.width < responsive.mobileScreen ||
+                            screenSize.width < responsive.tabletScreen
+                        ? Alignment.center
+                        : null,
                     child: Text(
                       '|',
                       style: CustomTextStyles.body,
@@ -63,7 +80,12 @@ class DExperiencePageV3 extends ConsumerWidget {
                 const SizedBox(
                   height: 100,
                 ),
-                const InternExperiences(),
+                const ExperiencesWidget(
+                  title: 'Freelance FullStack Software Developer - MERN Stack',
+                  subTitle: 'Self - Employed',
+                  description:
+                      " - Developed and Launch Hotel Management System using MERN Stack.",
+                ),
               ],
             ),
           ],

@@ -75,6 +75,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/logos/
+    - assets/images/text/
     - assets/images/logos_v3/
     - assets/images/logos/linkedin.png
     - assets/images/projects/utol_website/

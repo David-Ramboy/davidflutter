@@ -35,7 +35,7 @@ class ProjectCardWithCarousel extends StatelessWidget {
                 border: Border.all(color: colors.backgroundScreen)),
             child: CarouselSlider(
               options: CarouselOptions(
-                height: 210.0,
+                height: 130.0,
                 autoPlay: false,
                 enableInfiniteScroll: false,
                 enlargeCenterPage: true,

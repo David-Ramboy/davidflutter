@@ -33,30 +33,25 @@ class DesktopBody extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     DesktopNav(),
-                    // Container(
-                    //   height: 100,
-                    // ),
-                    // const DAboutPage(),
-                    // Container(
-                    //   height: 100,
-                    // ),
-                    // const DesktopExperiences(),
-
+                    SizedBox(
+                      height: 140,
+                    ),
                     DHeroPageV3(),
                     SizedBox(
-                      height: 250,
+                      height: 100,
                     ),
-
+                    ProjectsPage(),
+                    SizedBox(
+                      height: 100,
+                    ),
                     DExperiencePageV3(),
                     SizedBox(
                       height: 250,
                     ),
-
                     SkillPage(),
                     SizedBox(
                       height: 250,
                     ),
-                    ProjectsPage(),
                   ],
                 ),
               ),

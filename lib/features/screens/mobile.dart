@@ -25,6 +25,7 @@ class MobileHomeBody extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  DesktopNav(),
                   // const DesktopNav(),
                   // Container(
                   //   height: 100,
