@@ -6,8 +6,8 @@ import 'package:my_portfolio_flutter/core/widgets/box_constraints/box_constraint
 import 'package:my_portfolio_flutter/features/experiences/widgets/experience_widget.dart';
 import '../../../../core/config/constants.dart' as responsive;
 
-class DExperiencePageV3 extends ConsumerWidget {
-  const DExperiencePageV3({super.key});
+class MExperiencePageV3 extends ConsumerWidget {
+  const MExperiencePageV3({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -19,18 +19,16 @@ class DExperiencePageV3 extends ConsumerWidget {
         child: BoxConstraintsWidth(
           desktopMaxWidth: -340,
           tabletMaxWidth: 370,
+          mobileMaxWidth: 370,
           widgetContent: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(
                 height: 20,
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 7),
-                child: Text(
-                  "Experience",
-                  style: CustomTextStyles.title2.copyWith(fontSize: 28),
-                ),
+              Text(
+                "Experience",
+                style: CustomTextStyles.title2.copyWith(fontSize: 28),
               ),
               Column(
                 crossAxisAlignment:

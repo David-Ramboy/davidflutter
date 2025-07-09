@@ -38,7 +38,7 @@ class DesktopBody extends StatelessWidget {
                     ),
                     DHeroPageV3(),
                     SizedBox(
-                      height: 100,
+                      height: 140,
                     ),
                     ProjectsPage(),
                     SizedBox(
@@ -46,7 +46,7 @@ class DesktopBody extends StatelessWidget {
                     ),
                     DExperiencePageV3(),
                     SizedBox(
-                      height: 250,
+                      height: 150,
                     ),
                     SkillPage(),
                     SizedBox(

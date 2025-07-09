@@ -8,8 +8,8 @@ import 'package:my_portfolio_flutter/features/hero/widgets/intro_image.dart';
 import 'package:my_portfolio_flutter/features/hero/widgets/introduction.dart';
 import '../../../../core/config/constants.dart' as responsive;
 
-class DHeroPageV3 extends ConsumerWidget {
-  const DHeroPageV3({super.key});
+class MHeroPageV3 extends ConsumerWidget {
+  const MHeroPageV3({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -29,9 +29,15 @@ class DHeroPageV3 extends ConsumerWidget {
                 const SizedBox(
                   height: 0,
                 ),
-                SvgPicture.asset('assets/images/text/hi.svg'),
-                SizedBox(height: 2),
-                SvgPicture.asset('assets/images/text/david_bryan.svg'),
+                SvgPicture.asset(
+                  'assets/images/text/mobile_hi.svg',
+                  width: 160,
+                ),
+                const SizedBox(height: 18),
+                SvgPicture.asset(
+                  'assets/images/text/mobile_david_bryan.svg',
+                ),
+                const SizedBox(height: 20),
                 Padding(
                   padding: const EdgeInsets.only(left: 2),
                   child: Text(
@@ -39,7 +45,6 @@ class DHeroPageV3 extends ConsumerWidget {
                     style: CustomTextStyles.title2Sp.copyWith(
                       fontSize: 22,
                       fontFamily: 'Inter',
-                      height: 3,
                       fontWeight: FontWeight.w100,
                     ),
                   ),

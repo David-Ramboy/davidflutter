@@ -5,8 +5,8 @@ import 'package:my_portfolio_flutter/features/skills/widgets/skills_card.dart';
 import 'package:my_portfolio_flutter/core/common/styles/utol_text_styles.dart';
 import '../../../../core/config/constants.dart' as responsive;
 
-class SkillPage extends StatelessWidget {
-  const SkillPage({super.key});
+class MSkillPage extends StatelessWidget {
+  const MSkillPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,15 +18,13 @@ class SkillPage extends StatelessWidget {
         child: BoxConstraintsWidth(
           desktopMaxWidth: -340,
           tabletMaxWidth: 370,
+          mobileMaxWidth: 380,
           widgetContent: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 7),
-                child: Text(
-                  "Skills",
-                  style: CustomTextStyles.title2.copyWith(fontSize: 28),
-                ),
+              Text(
+                "Skills",
+                style: CustomTextStyles.title2.copyWith(fontSize: 28),
               ),
               const SizedBox(
                 height: 100,

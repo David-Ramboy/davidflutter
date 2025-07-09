@@ -21,40 +21,30 @@ class TabletHomeBody extends StatelessWidget {
             ConstrainedBox(
               constraints: const BoxConstraints(
                   minWidth: 0, maxWidth: constants.desktop),
-              child: Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
-                    // decoration: BoxDecoration(
-                    //   border: Border.all(color: Colors.white),
-                    // ),
-                    child: const DesktopNav(),
+                  DesktopNav(),
+                  SizedBox(
+                    height: 120,
                   ),
-                  // Container(
-                  //   height: 100,
-                  // ),
-                  // const DAboutPage(),
-                  // Container(
-                  //   height: 100,
-                  // ),
-                  // const DesktopExperiences(),
-
-                  const DHeroPageV3(),
-                  const SizedBox(
+                  DHeroPageV3(),
+                  SizedBox(
+                    height: 120,
+                  ),
+                  ProjectsPage(),
+                  SizedBox(
+                    height: 100,
+                  ),
+                  DExperiencePageV3(),
+                  SizedBox(
+                    height: 150,
+                  ),
+                  SkillPage(),
+                  SizedBox(
                     height: 250,
                   ),
-
-                  const DExperiencePageV3(),
-                  const SizedBox(
-                    height: 250,
-                  ),
-
-                  const SkillPage(),
-                  const SizedBox(
-                    height: 250,
-                  ),
-                  const ProjectsPage(),
                 ],
               ),
             ),

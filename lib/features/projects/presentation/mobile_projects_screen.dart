@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-
 import 'package:my_portfolio_flutter/core/common/styles/utol_text_styles.dart';
 import 'package:my_portfolio_flutter/core/widgets/box_constraints/box_constraints.dart';
 import 'package:my_portfolio_flutter/features/projects/widgets/project_card.dart';
 import '../../../../core/config/constants.dart' as responsive;
 
-class ProjectsPage extends StatelessWidget {
-  const ProjectsPage({super.key});
+class MProjectsPage extends StatelessWidget {
+  const MProjectsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +17,7 @@ class ProjectsPage extends StatelessWidget {
         child: BoxConstraintsWidth(
           desktopMaxWidth: -400,
           tabletMaxWidth: 370,
-          mobileMaxWidth: 400,
+          mobileMaxWidth: 380,
           widgetContent: Container(
             // decoration: BoxDecoration(border: Border.all()),
             child: Column(
@@ -30,7 +29,7 @@ class ProjectsPage extends StatelessWidget {
                     Text(
                       "Works",
                       style: CustomTextStyles.title2
-                          .copyWith(fontSize: 35, fontWeight: FontWeight.w200),
+                          .copyWith(fontSize: 30, fontWeight: FontWeight.w200),
                     ),
                     const SizedBox(width: 10),
                     Text(
