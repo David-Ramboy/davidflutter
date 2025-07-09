@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio_flutter/core/widgets/footer/footer.dart';
 import 'package:my_portfolio_flutter/core/widgets/navbar/nav_desktop.dart';
 import 'package:my_portfolio_flutter/core/widgets/responsive/responsive_layout.dart';
 import 'package:my_portfolio_flutter/features/about/presentation/desktop_about.dart';
@@ -52,6 +53,7 @@ class DesktopBody extends StatelessWidget {
                     SizedBox(
                       height: 250,
                     ),
+                    Footer()
                   ],
                 ),
               ),

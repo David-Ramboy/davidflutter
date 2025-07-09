@@ -42,7 +42,7 @@ class MExperiencePageV3 extends ConsumerWidget {
                   ),
                   const ExperiencesWidget(
                     title:
-                        'Front End - Software Developer - Flutter - 1yr & 8 months',
+                        'Front End | Software Developer | Flutter | 1yr & 8 months',
                     subTitle:
                         'UTOL - Unified Transport Operations League Corp.',
                     description:
@@ -65,7 +65,7 @@ class MExperiencePageV3 extends ConsumerWidget {
                   ),
                   const ExperiencesWidget(
                     title:
-                        'Inter Full-Stack Software Developer - Django - 4 months',
+                        'Inter Full-Stack Software Developer | Django | 4 months',
                     subTitle: 'SME Soft Inc. Makati City, Philippines',
                     description:
                         " - Developed Full-stack Course management System using django\n - Cooperate with teams developing MIS for the company using django.\n",
@@ -87,7 +87,7 @@ class MExperiencePageV3 extends ConsumerWidget {
                   ),
                   const ExperiencesWidget(
                     title:
-                        'Freelance FullStack Software Developer - MERN Stack',
+                        'Freelance FullStack Software Developer | MERN Stack',
                     subTitle: 'Self - Employed',
                     description:
                         " - Developed and Launch Hotel Management System using MERN Stack.",

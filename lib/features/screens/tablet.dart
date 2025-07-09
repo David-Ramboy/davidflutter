@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio_flutter/core/widgets/footer/footer.dart';
 import 'package:my_portfolio_flutter/core/widgets/navbar/nav_desktop.dart';
 import 'package:my_portfolio_flutter/features/about/presentation/desktop_about.dart';
 import 'package:my_portfolio_flutter/features/experiences/presentation/V3/desktop_experiences.dart';
@@ -45,6 +46,7 @@ class TabletHomeBody extends StatelessWidget {
                   SizedBox(
                     height: 250,
                   ),
+                  Footer()
                 ],
               ),
             ),
